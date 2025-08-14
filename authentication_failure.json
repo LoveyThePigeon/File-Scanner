@@ -1,0 +1,8 @@
+[
+    {
+        "19": "Jul 20 11:37:41 HOSTNAME lightdm[PID]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=USERNAME"
+    },
+    {
+        "24": "Jul 20 11:37:36 HOSTNAME lightdm[PID]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=USERNAME"
+    }
+]
