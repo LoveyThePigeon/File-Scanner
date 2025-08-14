@@ -1,0 +1,52 @@
+Jul 20 11:37:53 HOSTNAME systemd[1]: Finished user-runtime-dir@UID.service - User Runtime Directory /run/user/UID.
+Jul 20 11:37:53 HOSTNAME systemd-logind[PID]: New session 2 of user USERNAME.
+Jul 20 11:37:53 HOSTNAME systemd[1]: Starting user-runtime-dir@UID.service - User Runtime Directory /run/user/UID...
+Jul 20 11:37:53 HOSTNAME pulseaudio[PID]: Error opening PCM device front:0: No such file or directory
+Jul 20 11:37:53 HOSTNAME systemd[1]: Created slice user-UID.slice - User Slice of UID UID.
+Jul 20 11:37:53 HOSTNAME systemd-logind[PID]: Removed session c1.
+Jul 20 11:37:53 HOSTNAME lightdm[PID]: pam_unix(lightdm:session): session opened for user USERNAME(uid=UID) by (uid=0)
+Jul 20 11:37:53 HOSTNAME systemd[1]: session-c1.scope: Consumed 1.639s CPU time.
+Jul 20 11:37:53 HOSTNAME systemd[1]: Stopped session-c1.scope - Session c1 of User lightdm.
+Jul 20 11:37:53 HOSTNAME systemd[1]: session-c1.scope: Deactivated successfully.
+Jul 20 11:37:53 HOSTNAME lightdm[PID]: pam_unix(lightdm-greeter:session): session closed for user lightdm
+Jul 20 11:37:53 HOSTNAME systemd[1]: Stopping session-c1.scope - Session c1 of User lightdm...
+Jul 20 11:37:53 HOSTNAME lightdm[PID]: gkr-pam: stashed password to try later in open session
+Jul 20 11:37:53 HOSTNAME lightdm[PID]: gkr-pam: unable to locate daemon control file
+Jul 20 11:37:41 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'USERNAME')
+Jul 20 11:37:41 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jul 20 11:37:41 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): pam_get_item returned a password
+Jul 20 11:37:41 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): getting password (0x00000388)
+Jul 20 11:37:41 HOSTNAME lightdm[PID]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=USERNAME
+Jul 20 11:37:36 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): internal module error (retval = PAM_AUTHINFO_UNAVAIL(9), user = 'USERNAME')
+Jul 20 11:37:36 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): request wbcLogonUser failed: WBC_ERR_WINBIND_NOT_AVAILABLE, PAM error: PAM_AUTHINFO_UNAVAIL (9)!
+Jul 20 11:37:36 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): pam_get_item returned a password
+Jul 20 11:37:36 HOSTNAME lightdm[PID]: pam_winbind(lightdm:auth): getting password (0x00000388)
+Jul 20 11:37:36 HOSTNAME lightdm[PID]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=USERNAME
+Jul 20 11:36:07 HOSTNAME pulseaudio[PID]: GetManagedObjects() failed: org.freedesktop.DBus.Error.NoReply: Did not receive a reply...
+Jul 20 11:36:07 HOSTNAME dbus-daemon[PID]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+Jul 20 11:36:06 HOSTNAME systemd[1]: blueman-mechanism.service: Deactivated successfully.
+Jul 20 11:36:00 HOSTNAME systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Jul 20 11:35:58 HOSTNAME ModemManager[PID]: <warn>  [base-manager] couldn't create modem for device '/sys/devices/...': Failed to find primary AT port
+Jul 20 11:35:58 HOSTNAME ModemManager[PID]: <warn>  [plugin/generic] could not grab port ttyS1: Cannot add port 'tty/ttyS1', unhandled port type
+Jul 20 11:35:58 HOSTNAME ModemManager[PID]: <info>  [device /sys/devices/... ] creating modem with plugin 'generic' and '1' ports
+Jul 20 11:35:47 HOSTNAME systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Jul 20 11:35:43 HOSTNAME at-spi-bus-launcher[PID]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Jul 20 11:35:43 HOSTNAME at-spi-bus-launcher[PID]: dbus-daemon[PID]: activated service 'org.a11y.atspi.Registry'
+Jul 20 11:35:42 HOSTNAME at-spi-bus-launcher[PID]: dbus-daemon[PID]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=UID pid=PID comm="/usr/sbin/slick-greeter")
+Jul 20 11:35:42 HOSTNAME systemd[UID]: Startup finished in 3.171s.
+Jul 20 11:35:42 HOSTNAME systemd[UID]: Reached target default.target - Main User Target.
+Jul 20 11:35:42 HOSTNAME systemd[UID]: Started pulseaudio.service - Sound Service.
+Jul 20 11:35:42 HOSTNAME systemd[1]: bluetooth.service - Bluetooth service was skipped because of an unmet condition check (ConditionPathIsDirectory=/sys/class/bluetooth).
+Jul 20 11:35:42 HOSTNAME dbus-daemon[PID]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.23' (uid=UID pid=PID comm="/usr/bin/pulseaudio --daemonize=no --log-target=jo")
+Jul 20 11:35:41 HOSTNAME systemd[1]: Started upower.service - Daemon for power management.
+Jul 20 11:35:41 HOSTNAME dbus-daemon[PID]: [system] Successfully activated service 'org.freedesktop.UPower'
+Jul 20 11:35:41 HOSTNAME systemd[1]: Starting upower.service - Daemon for power management...
+Jul 20 11:35:41 HOSTNAME dbus-daemon[PID]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.20' (uid=UID pid=PID comm="/usr/sbin/slick-greeter")
+Jul 20 11:35:41 HOSTNAME rtkit-daemon[PID]: Supervising 2 threads of 1 processes of 1 users.
+Jul 20 11:35:41 HOSTNAME rtkit-daemon[PID]: Successfully made thread PID of process PID owned by 'UID' RT at priority 5.
+Jul 20 11:35:41 HOSTNAME rtkit-daemon[PID]: Supervising 1 threads of 1 processes of 1 users.
+Jul 20 11:35:40 HOSTNAME systemd[UID]: Started gvfs-daemon.service - Virtual filesystem service.
+Jul 20 11:35:40 HOSTNAME dbus-daemon[PID]: [session uid=UID pid=PID] Successfully activated service 'org.gtk.vfs.Daemon'
+Jul 20 11:35:40 HOSTNAME systemd[UID]: Starting gvfs-daemon.service - Virtual filesystem service...
+Jul 20 11:35:40 HOSTNAME dbus-daemon[PID]: [session uid=UID pid=PID] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.0' (uid=UID pid=PID comm="/usr/sbin/slick-greeter")
+Jul 20 11:35:40 HOSTNAME ntpd[PID]: IO: new interface(s) found: waking up resolver
