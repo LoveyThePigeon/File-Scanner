@@ -5,6 +5,7 @@
   Install dependencies using pip:
 
   pip install pytest      # to run test file
+  
   pip install termcolor   # to color text in terminal output
 
 ## Description:
@@ -14,7 +15,7 @@
   By default, it searches the file auth.log for the phrase "fail", but both the file and phrase can be customized through command-line arguments.
 
   Usage:
-  python file_scanner.py -f <filename> -s <phrase> 
+  python file_scanner.py -f filename -s phrase 
 
 ### Arguments:
 
