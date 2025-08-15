@@ -20,7 +20,9 @@
 ### Arguments:
 
   It takes two optional arguments on the command line:
+  
   -f - input file name (default "auth.log")
+  
   -s - search phrase to look for in the file, case-insensitive (default "fail")
 
 ### Functions:
