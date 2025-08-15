@@ -53,7 +53,7 @@
 
   Created when running pytest test_file_scanner.py to verify the save_found() function
 
-# TEST FILE "test_file_scanner.py"
+## TEST FILE "test_file_scanner.py"
 
   This file tests functions from file_scanner.py. It contains five test functions:
 
